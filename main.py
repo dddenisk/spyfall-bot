@@ -10,7 +10,8 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 from aiogram.filters import Command
 
-API_TOKEN = "ВСТАВЬ_СВОЙ_ТОКЕН"
+import os
+API_TOKEN = os.getenv("API_TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
